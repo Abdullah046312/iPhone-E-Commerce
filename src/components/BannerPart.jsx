@@ -6,7 +6,6 @@ import Slider from "react-slick";  // Import Slick Slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 // Slick settings
 const settings = {
   dots: true, // Shows dots for navigation
@@ -19,44 +18,56 @@ const settings = {
 };
 
 const BannerPart = () => {
+  const categories = [
+    "Woman’s Fashion", "Men’s Fashion", "Electronics", "Home & Lifestyle",
+    "Medicine", "Sports & Outdoor", "Baby’s & Toys", "Groceries & Pets", "Health & Beauty"
+  ];
+
   return (
-    <section className="">
+    <section>
       <Container>
-        <div className="flex justify-between">
+        <div className="flex flex-wrap sm:flex-nowrap cursor-pointer">
           {/* Left sidebar */}
-          <div className="w-[20%] border-r-2 border-[rgba(0,0,0,0.22)] py-10">
-            <div className="flex items-center gap-3">
-              <h4 className='text-[16px] text-[#000000] font-inter font-normal'>Woman’s Fashion</h4>
-              <h4><IoIosArrowForward /></h4>
-            </div>
-            <div className="flex items-center gap-3 mt-3">
-              <h4 className='text-[16px] text-[#000000] font-inter font-normal'>Men’s Fashion</h4>
-              <h4><IoIosArrowForward /></h4>
-            </div>
-            <h4 className='text-[16px] text-[#000000] font-inter font-normal mt-3'>Electronics</h4>
-            <h4 className='text-[16px] text-[#000000] font-inter font-normal mt-3'>Home & Lifestyle</h4>
-            <h4 className='text-[16px] text-[#000000] font-inter font-normal mt-3'>Medicine</h4>
-            <h4 className='text-[16px] text-[#000000] font-inter font-normal mt-3'>Sports & Outdoor</h4>
-            <h4 className='text-[16px] text-[#000000] font-inter font-normal mt-3'>Baby’s & Toys</h4>
-            <h4 className='text-[16px] text-[#000000] font-inter font-normal mt-3'>Groceries & Pets</h4>
-            <h4 className='text-[16px] text-[#000000] font-inter font-normal mt-3'>Health & Beauty</h4>
+          <div className="w-full sm:w-[20%] lg:border-r-2  lg:border-[rgba(0,0,0,0.22)] py-10">
+            {categories.map((category, index) => (
+              <div key={index} className="flex items-center gap-3 mt-3 group">
+                <h4 className='text-[16px] text-[#000000] font-inter font-normal group-hover:text-[#FF6500]'>
+                  {category}
+                </h4>
+                <h4 className="text-[20px] text-[#000000] group-hover:text-[#FF6500]">
+                  <IoIosArrowForward />
+                </h4>
+              </div>
+            ))}
           </div>
 
           {/* Right side with slider */}
-          <div className="w-[70%] py-10">
+          <div className="w-full sm:w-[70%] py-10 lg:pl-10">
             {/* React Slick Slider */}
             <Slider {...settings}>
-              <div>
-                <img className='w-full' src={bannerimg} alt="Banner 1" />
+              <div className="relative group">
+                <img className='w-full transform group-hover:scale-105 transition-all duration-300' src={bannerimg} alt="Banner 1" />
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-center items-center">
+                  <span className="text-[#FF6500] rounded-xl text-[20px] font-bold py-5 px-5 bg-[rgba(250,250,250,0.19)]">Shop Now</span>
+                </div>
               </div>
-              <div>
-                <img className='w-full' src={bannerimg} alt="Banner 2" />
+              <div className="relative group">
+                <img className='w-full transform group-hover:scale-105 transition-all duration-300' src={bannerimg} alt="Banner 2" />
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-center items-center">
+                  <span className="text-white text-[24px] font-bold">Shop Now</span>
+                </div>
               </div>
-              <div>
-                <img className='w-full' src={bannerimg} alt="Banner 3" />
+              <div className="relative group">
+                <img className='w-full transform group-hover:scale-105 transition-all duration-300' src={bannerimg} alt="Banner 3" />
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-center items-center">
+                  <span className="text-white text-[24px] font-bold">Shop Now</span>
+                </div>
               </div>
-              <div>
-                <img className='w-full' src={bannerimg} alt="Banner 3" />
+              <div className="relative group">
+                <img className='w-full transform group-hover:scale-105 transition-all duration-300' src={bannerimg} alt="Banner 4" />
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-center items-center">
+                  <span className="text-white text-[24px] font-bold">Shop Now</span>
+                </div>
               </div>
             </Slider>
           </div>

@@ -4,3 +4,39 @@
 
 
 
+/* Custom Styles for the Navigation Links */
+.nav-item {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 10px; /* Space for the underline */
+  }
+  
+  .nav-item::before,
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #DB4444; /* Red color for underline */
+    transition: width 0.3s ease;
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .nav-item::before {
+    bottom: 0; /* Position it below the text */
+  }
+  
+  .nav-item::after {
+    top: 0; /* Position it above the text */
+  }
+  
+  .nav-item:hover::before,
+  .nav-item:hover::after {
+    width: 100%; /* On hover, expand the line to the full width */
+  }
+  
+  .nav-item:hover {
+    color: #DB4444; /* Change text color on hover */
+  }
+ 
