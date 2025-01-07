@@ -28,19 +28,19 @@ const BestSellingProducts = () => {
 
                 <div className="flex justify-between py-8 flex-wrap gap-4">
                     <div className="w-full sm:w-[24%]">
-                        <img className='h-[450px] w-full object-cover rounded-lg hover:scale-105 transition-all' src={BestSellingProductsimg} alt="Best Selling Product 1" />
+                        <img className='h-[450px] w-full object-cover rounded-lg ' src={BestSellingProductsimg} alt="Best Selling Product 1" />
                     </div>
 
                     <div className="w-full sm:w-[24%]">
-                        <img className='h-[450px] w-full object-cover rounded-lg hover:scale-105 transition-all' src={BestSellingProducts1} alt="Best Selling Product 2" />
+                        <img className='h-[450px] w-full object-cover rounded-lg ' src={BestSellingProducts1} alt="Best Selling Product 2" />
                     </div>
 
                     <div className="w-full sm:w-[24%]">
-                        <img className='h-[450px] w-full object-cover rounded-lg hover:scale-105 transition-all' src={BestSellingProducts2} alt="Best Selling Product 3" />
+                        <img className='h-[450px] w-full object-cover rounded-lg ' src={BestSellingProducts2} alt="Best Selling Product 3" />
                     </div>
 
                     <div className="w-full sm:w-[24%]">
-                        <img className='h-[450px] w-full object-cover rounded-lg hover:scale-105 transition-all' src={BestSellingProducts3} alt="Best Selling Product 4" />
+                        <img className='h-[450px] w-full object-cover rounded-lg ' src={BestSellingProducts3} alt="Best Selling Product 4" />
                     </div>
                 </div>
 

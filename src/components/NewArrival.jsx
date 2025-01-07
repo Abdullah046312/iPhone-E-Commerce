@@ -26,13 +26,21 @@ const NewArrival = () => {
             </div>
 
             <div className="flex justify-between py-10 flex-wrap gap-4">
-                <div className="w-full sm:w-[48%]">
-                    <img className='w-full object-cover rounded-lg hover:scale-105 transition-all' src={newarrivalimg} alt="New Arrival 1" />
-                </div>
-                <div className="w-full sm:w-[48%]">
-                    <img className='w-full object-cover rounded-lg hover:scale-105 transition-all' src={newarrivalimg1} alt="New Arrival 2" />
-                </div>
-            </div>
+    <div className="w-full sm:w-[48%] perspective">
+        <img
+            className="w-full object-cover rounded-lg hover:scale-105 hover:rotate-3 hover:rotate-y-3 shadow-lg transition-transform duration-500 ease-out"
+            src={newarrivalimg}
+            alt="New Arrival 1"
+        />
+    </div>
+    <div className="w-full sm:w-[48%] perspective">
+        <img
+            className="w-full object-cover rounded-lg hover:scale-105 hover:-rotate-3 hover:-rotate-y-3 shadow-lg transition-transform duration-500 ease-out"
+            src={newarrivalimg1}
+            alt="New Arrival 2"
+        />
+    </div>
+</div>
 
             <div className="flex justify-between py-10 flex-wrap gap-6">
                 <div className="w-full sm:w-[32%] text-center flex flex-col items-center">

@@ -54,19 +54,19 @@ const BannerPart = () => {
               <div className="relative group">
                 <img className='w-full transform group-hover:scale-105 transition-all duration-300' src={bannerimg} alt="Banner 2" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-center items-center">
-                  <span className="text-white text-[24px] font-bold">Shop Now</span>
+                <span className="text-[#FF6500] rounded-xl text-[20px] font-bold py-5 px-5 bg-[rgba(250,250,250,0.19)]">Shop Now</span>
                 </div>
               </div>
               <div className="relative group">
                 <img className='w-full transform group-hover:scale-105 transition-all duration-300' src={bannerimg} alt="Banner 3" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-center items-center">
-                  <span className="text-white text-[24px] font-bold">Shop Now</span>
+                <span className="text-[#FF6500] rounded-xl text-[20px] font-bold py-5 px-5 bg-[rgba(250,250,250,0.19)]">Shop Now</span>
                 </div>
               </div>
               <div className="relative group">
                 <img className='w-full transform group-hover:scale-105 transition-all duration-300' src={bannerimg} alt="Banner 4" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-center items-center">
-                  <span className="text-white text-[24px] font-bold">Shop Now</span>
+                <span className="text-[#FF6500] rounded-xl text-[20px] font-bold py-5 px-5 bg-[rgba(250,250,250,0.19)]">Shop Now</span>
                 </div>
               </div>
             </Slider>

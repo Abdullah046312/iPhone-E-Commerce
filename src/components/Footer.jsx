@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <section className='bg-[#000000] py-16 text-[#FAFAFA]'>
       <Container>
-      <div className="flex flex-wrap lg:flex-nowrap justify-between border-b-2 border-[rgba(250,250,250,0.38)] pb-8 gap-8">
+      <div className="flex flex-wrap lg:flex-nowrap justify-between border-b-2 border-[rgba(250,250,250,0.38)] pb-8 gap-8 overflow-hidden">
 
           <div className="w-full sm:w-[45%] md:w-[20%]">
             <h2 className='text-[24px] text-[#FAFAFA] font-inter font-bold'>Exclusive</h2>
