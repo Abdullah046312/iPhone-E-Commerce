@@ -20,7 +20,7 @@ const Footer = () => {
 
             <div className="relative mt-3">
               <input
-                className='h-[48px] w-full sm:w-[247px] text-[14px] text-[#262626] font-poppins font-semibold pl-8 pr-2 outline-none'
+                className='h-[48px] w-[250px] sm:w-[247px] text-[14px] text-[#262626] font-poppins font-semibold pl-8 pr-2 outline-none'
                 type="email"
                 placeholder='Enter your email'
               />
